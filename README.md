@@ -20,12 +20,6 @@ This is a generic web scraper script written in Python, utilizing the `requests`
     urls = unique_links
     ```
 
-3. Run the script:
-
-    ```bash
-    python your_scraper_script.py
-    ```
-
 ## Dependencies
 
 - `requests`: Used for making HTTP requests.
@@ -41,6 +35,7 @@ The script extracts the following data columns:
 - **Link**: The URL of the scraped page.
 - **Taxonomy**: Breadcrumb navigation of the page.
 - **H1 Title**: The main heading of the page.
+- Scrapes all the filters and their options applied to the links dynamically.
 
 Additional columns are dynamically generated based on the filters found on the page.
 
@@ -50,7 +45,7 @@ The script handles both request and processing errors. URLs that encounter error
 
 ### Output
 
-The scraped data is saved in a CSV file named `data3.csv`.
+The scraped data is saved in a CSV file named `data.csv`.
 
 ## Customization
 
